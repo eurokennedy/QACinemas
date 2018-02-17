@@ -1,14 +1,17 @@
-import javax.swing.*;
+import javax.swing.JOptionPane;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class MyEvent implements ActionListener {
 
-    public static final int twoPounds = 2;
-    public static final int fourPounds = 4;
-    public static final int sixPounds = 6;
-    public static final int eightPounds = 8;
-    static int Childamnt, Studentamnt, OAPamnt, Standamnt;
+    private static final int twoPounds = 2;
+    private static final int fourPounds = 4;
+    private static final int sixPounds = 6;
+    private static final int eightPounds = 8;
+    private static int Childamnt;
+    private static int Studentamnt;
+    private static int OAPamnt; 
+    private static int Standamnt;
 
     RadioButtons radioButtons;
     TextFields textFields;
@@ -30,8 +33,9 @@ public class MyEvent implements ActionListener {
             } else {
                 total = Standamnt * eightPounds + OAPamnt * sixPounds + Studentamnt * sixPounds + Childamnt * fourPounds;
             }
-            JOptionPane.showMessageDialog(null, "The total cost of tickets for this movie is Â£" + total);
-        } catch (NumberFormatException y) {
+            JOptionPane.showMessageDialog(null, "The total cost of tickets for this movie is £" + total);
+        } 
+        catch (NumberFormatException y) {
             JOptionPane.showMessageDialog(null, "Numbers only please. If there is an empty box please type 0 inside of it");
         }
     }

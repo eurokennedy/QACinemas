@@ -13,6 +13,5 @@ public class Main {
         textFields.OAP.addActionListener(event);
         textFields.Student.addActionListener(event);
         textFields.Child.addActionListener(event);
-
     }
 }

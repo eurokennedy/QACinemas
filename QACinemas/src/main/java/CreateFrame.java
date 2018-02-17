@@ -1,13 +1,10 @@
 import javax.swing.*;
 import java.awt.*;
 
-
 public class CreateFrame {
 
-
-
     public void createFrame() {
-        
+
         JFrame frame = new JFrame("Choose the amount and type of tickets you would like to purchase");
         JPanel panel = new JPanel();
         JLabel standardLabel = new JLabel("Standard:");
@@ -31,7 +28,6 @@ public class CreateFrame {
         bg1.add(radioButtons.SunBut);
         JPanel radioPanel = new JPanel();
         radioPanel.setLayout(new GridLayout(7, 1));
-
 
         panel.add(standardLabel);
         panel.add(textFields.Standard);

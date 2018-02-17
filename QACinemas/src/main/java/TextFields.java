@@ -1,4 +1,4 @@
-import javax.swing.*;
+import javax.swing.JTextField;
 
 public class TextFields {
     JTextField Standard = new JTextField("0",2);

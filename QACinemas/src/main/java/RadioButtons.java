@@ -1,4 +1,4 @@
-import javax.swing.*;
+import javax.swing.JRadioButton;
 
 public class RadioButtons {
     JRadioButton MonBut = new JRadioButton("Monday",true);
@@ -8,7 +8,4 @@ public class RadioButtons {
     JRadioButton FriBut = new JRadioButton("Friday");
     JRadioButton SatBut = new JRadioButton("Saturday");
     JRadioButton SunBut = new JRadioButton("Sunday");
-
-
-
 }
